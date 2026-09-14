@@ -1,13 +1,388 @@
-<DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
- <meta charset= "UTF-8" />
-  <title> Project 1</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="NexaCore — The future of intelligent technology. AI-powered solutions that scale with your ambition." />
+    <title>Project1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
- <body>
-    <h1> Week 1 Website </h1>
-    <p> This webpage is basically using Nginux on Ubuntu Server.</p>
- </body>
+<body>
+
+    <!-- ===== NAV ===== -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo" id="logo-link">
+                <span class="logo-icon">⬡</span>
+                <span class="logo-text">NexaCore</span>
+            </a>
+            <nav class="nav-links" id="nav-links">
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#stats" class="nav-link">Stats</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <a href="#contact" class="btn btn-primary nav-cta" id="nav-cta-btn">Get Started</a>
+        </div>
+    </header>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-orb hero-orb-1"></div>
+        <div class="hero-orb hero-orb-2"></div>
+        <div class="hero-orb hero-orb-3"></div>
+        <div class="hero-content">
+            <div class="hero-badge" id="hero-badge">
+                <span class="badge-dot"></span> Now in Public Beta — Try it free
+            </div>
+            <h1 class="hero-title">
+                Build Smarter.<br />
+                <span class="gradient-text">Scale Faster.</span><br />
+                Ship Anything.
+            </h1>
+            <p class="hero-subtitle">
+                NexaCore is the AI-native platform that helps modern teams design,
+                deploy, and scale intelligent products — without the complexity.
+            </p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn btn-primary btn-lg" id="hero-cta-btn">Start for Free →</a>
+                <a href="#features" class="btn btn-ghost btn-lg" id="hero-demo-btn">
+                    <span class="play-icon">▶</span> Watch Demo
+                </a>
+            </div>
+            <div class="hero-trust">
+                <span class="trust-label">Trusted by teams at</span>
+                <div class="trust-logos">
+                    <span class="trust-logo">Vercel</span>
+                    <span class="trust-sep">·</span>
+                    <span class="trust-logo">Stripe</span>
+                    <span class="trust-sep">·</span>
+                    <span class="trust-logo">Linear</span>
+                    <span class="trust-sep">·</span>
+                    <span class="trust-logo">Notion</span>
+                    <span class="trust-sep">·</span>
+                    <span class="trust-logo">Figma</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-visual" id="hero-visual">
+            <div class="dashboard-card">
+                <div class="card-header">
+                    <div class="card-dots">
+                        <span class="dot dot-red"></span>
+                        <span class="dot dot-yellow"></span>
+                        <span class="dot dot-green"></span>
+                    </div>
+                    <span class="card-title-bar">AI Dashboard — Live</span>
+                </div>
+                <div class="card-body">
+                    <div class="metric-row">
+                        <div class="metric">
+                            <div class="metric-label">Uptime</div>
+                            <div class="metric-value green">99.99%</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-label">Requests / s</div>
+                            <div class="metric-value blue">48,291</div>
+                        </div>
+                        <div class="metric">
+                            <div class="metric-label">Latency</div>
+                            <div class="metric-value purple">12ms</div>
+                        </div>
+                    </div>
+                    <div class="chart-area">
+                        <svg class="chart-svg" viewBox="0 0 300 80" preserveAspectRatio="none">
+                            <defs>
+                                <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
+                                    <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.5" />
+                                    <stop offset="100%" stop-color="#7c3aed" stop-opacity="0" />
+                                </linearGradient>
+                            </defs>
+                            <path d="M0,60 C30,55 50,20 80,25 S130,50 160,30 S220,10 260,20 L300,15 L300,80 L0,80 Z"
+                                fill="url(#chartGrad)" />
+                            <path d="M0,60 C30,55 50,20 80,25 S130,50 160,30 S220,10 260,20 L300,15" fill="none"
+                                stroke="#7c3aed" stroke-width="2" />
+                        </svg>
+                    </div>
+                    <div class="activity-list">
+                        <div class="activity-item"><span class="activity-dot green"></span>Model deployed successfully
+                        </div>
+                        <div class="activity-item"><span class="activity-dot blue"></span>Pipeline scaled to 12 nodes
+                        </div>
+                        <div class="activity-item"><span class="activity-dot purple"></span>Anomaly detected &amp;
+                            resolved</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FEATURES ===== -->
+    <section class="features" id="features">
+        <div class="section-container">
+            <div class="section-header">
+                <div class="section-tag">Why NexaCore</div>
+                <h2 class="section-title">Everything you need.<br /><span class="gradient-text">Nothing you
+                        don't.</span></h2>
+                <p class="section-subtitle">A full platform built for developers, designers, and product teams — all in
+                    one place.</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card feature-card-wide" id="feat-ai">
+                    <div class="feat-icon-wrap purple">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z" />
+                            <path d="M2 17l10 5 10-5" />
+                            <path d="M2 12l10 5 10-5" />
+                        </svg>
+                    </div>
+                    <h3 class="feat-title">AI-Powered Core</h3>
+                    <p class="feat-desc">Run custom models, fine-tune on your data, and deploy in seconds. Our inference
+                        engine handles millions of requests per day.</p>
+                    <div class="feat-tags">
+                        <span class="tag">GPT-4o</span><span class="tag">Gemini</span><span
+                            class="tag">Claude</span><span class="tag">Custom LLMs</span>
+                    </div>
+                </div>
+                <div class="feature-card" id="feat-speed">
+                    <div class="feat-icon-wrap blue">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <polyline points="12 6 12 12 16 14" />
+                        </svg>
+                    </div>
+                    <h3 class="feat-title">Edge-Speed Delivery</h3>
+                    <p class="feat-desc">Deploy to 300+ global edge nodes. Sub-20ms response times, guaranteed.</p>
+                </div>
+                <div class="feature-card" id="feat-security">
+                    <div class="feat-icon-wrap green">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        </svg>
+                    </div>
+                    <h3 class="feat-title">Enterprise Security</h3>
+                    <p class="feat-desc">SOC 2 Type II, GDPR compliant, end-to-end encryption, zero-trust architecture.
+                    </p>
+                </div>
+                <div class="feature-card" id="feat-analytics">
+                    <div class="feat-icon-wrap orange">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" y1="20" x2="18" y2="10" />
+                            <line x1="12" y1="20" x2="12" y2="4" />
+                            <line x1="6" y1="20" x2="6" y2="14" />
+                        </svg>
+                    </div>
+                    <h3 class="feat-title">Real-Time Analytics</h3>
+                    <p class="feat-desc">Beautiful dashboards, custom alerts, and deep telemetry built right in — no
+                        setup.</p>
+                </div>
+                <div class="feature-card" id="feat-api">
+                    <div class="feat-icon-wrap cyan">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 18 22 12 16 6" />
+                            <polyline points="8 6 2 12 8 18" />
+                        </svg>
+                    </div>
+                    <h3 class="feat-title">Developer-First API</h3>
+                    <p class="feat-desc">RESTful &amp; GraphQL APIs with SDKs for every major language. Ship faster,
+                        break nothing.</p>
+                </div>
+                <div class="feature-card feature-card-wide" id="feat-scale">
+                    <div class="feat-icon-wrap pink">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+                        </svg>
+                    </div>
+                    <h3 class="feat-title">Auto-Scaling Infrastructure</h3>
+                    <p class="feat-desc">Never worry about traffic spikes again. NexaCore automatically scales your
+                        infrastructure up — and down — in real time, saving you money and stress.</p>
+                    <div class="feat-scale-bar">
+                        <div class="scale-bar-inner"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== STATS ===== -->
+    <section class="stats" id="stats">
+        <div class="stats-bg"></div>
+        <div class="section-container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">50,000<span>+</span></div>
+                    <div class="stat-label">Developers building on NexaCore</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-number">99.99<span>%</span></div>
+                    <div class="stat-label">Uptime SLA — every month, guaranteed</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-number">2.1<span>B</span></div>
+                    <div class="stat-label">API requests served this year</div>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <div class="stat-number">&lt;20<span>ms</span></div>
+                    <div class="stat-label">Global average latency</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section class="services" id="services">
+        <div class="section-container">
+            <div class="section-header">
+                <div class="section-tag">What we offer</div>
+                <h2 class="section-title">Built for every<br /><span class="gradient-text">stage of growth.</span></h2>
+            </div>
+            <div class="services-list">
+                <div class="service-item" id="svc-cloud">
+                    <div class="service-num">01</div>
+                    <div class="service-content">
+                        <h3 class="service-title">Cloud Infrastructure</h3>
+                        <p class="service-desc">Multi-cloud, multi-region deployments with one-click failover.
+                            Kubernetes under the hood so you don't have to think about it.</p>
+                    </div>
+                    <div class="service-arrow">→</div>
+                </div>
+                <div class="service-item" id="svc-ai">
+                    <div class="service-num">02</div>
+                    <div class="service-content">
+                        <h3 class="service-title">AI / ML Platform</h3>
+                        <p class="service-desc">Fine-tune, evaluate, and serve your own models. Or tap into our curated
+                            model library with a single API call.</p>
+                    </div>
+                    <div class="service-arrow">→</div>
+                </div>
+                <div class="service-item" id="svc-data">
+                    <div class="service-num">03</div>
+                    <div class="service-content">
+                        <h3 class="service-title">Data Pipelines</h3>
+                        <p class="service-desc">Ingest, transform, and query petabytes of data in real time. Native
+                            connectors for Kafka, Postgres, Snowflake and more.</p>
+                    </div>
+                    <div class="service-arrow">→</div>
+                </div>
+                <div class="service-item" id="svc-ops">
+                    <div class="service-num">04</div>
+                    <div class="service-content">
+                        <h3 class="service-title">Observability &amp; DevOps</h3>
+                        <p class="service-desc">Traces, logs, metrics — unified in one pane of glass. Ship with
+                            confidence using our integrated CI/CD toolchain.</p>
+                    </div>
+                    <div class="service-arrow">→</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="cta-section" id="contact">
+        <div class="cta-orb cta-orb-1"></div>
+        <div class="cta-orb cta-orb-2"></div>
+        <div class="section-container">
+            <div class="cta-content">
+                <h2 class="cta-title">Ready to build the future?</h2>
+                <p class="cta-sub">Join 50,000+ developers already on NexaCore. No credit card required.</p>
+                <form class="cta-form" id="cta-form" onsubmit="return false;">
+                    <input type="email" id="cta-email" class="cta-input" placeholder="Enter your work email" required />
+                    <button type="submit" class="btn btn-primary btn-lg" id="cta-submit-btn">Get Early Access</button>
+                </form>
+                <p class="cta-fine">Free forever plan. Upgrade when you need to.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" id="footer">
+        <div class="section-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="nav-logo">
+                        <span class="logo-icon">⬡</span>
+                        <span class="logo-text">NexaCore</span>
+                    </a>
+                    <p class="footer-tagline">Intelligent technology for teams that move fast and build things that
+                        last.</p>
+                </div>
+                <div class="footer-links-grid">
+                    <div class="footer-col">
+                        <div class="footer-col-title">Product</div>
+                        <a href="#" class="footer-link">Features</a>
+                        <a href="#" class="footer-link">Pricing</a>
+                        <a href="#" class="footer-link">Changelog</a>
+                        <a href="#" class="footer-link">Roadmap</a>
+                    </div>
+                    <div class="footer-col">
+                        <div class="footer-col-title">Developers</div>
+                        <a href="#" class="footer-link">Documentation</a>
+                        <a href="#" class="footer-link">API Reference</a>
+                        <a href="#" class="footer-link">SDKs</a>
+                        <a href="#" class="footer-link">Status</a>
+                    </div>
+                    <div class="footer-col">
+                        <div class="footer-col-title">Company</div>
+                        <a href="#" class="footer-link">About</a>
+                        <a href="#" class="footer-link">Blog</a>
+                        <a href="#" class="footer-link">Careers</a>
+                        <a href="#" class="footer-link">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2023 NexaCore, Inc. All rights reserved.</span>
+                <div class="footer-legal">
+                    <a href="#" class="footer-link">Privacy</a>
+                    <a href="#" class="footer-link">Terms</a>
+                    <a href="#" class="footer-link">Security</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            navbar.classList.toggle('scrolled', window.scrollY > 40);
+        });
+        document.querySelectorAll('a[href^="#"]').forEach(a => {
+            a.addEventListener('click', e => {
+                const target = document.querySelector(a.getAttribute('href'));
+                if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+            });
+        });
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.feature-card, .stat-item, .service-item, .hero-visual').forEach(el => {
+            el.classList.add('fade-up');
+            observer.observe(el);
+        });
+        const scaleBar = document.querySelector('.scale-bar-inner');
+        const scaleObserver = new IntersectionObserver(([e]) => {
+            if (e.isIntersecting) scaleBar.style.width = '78%';
+        }, { threshold: 0.5 });
+        if (scaleBar) scaleObserver.observe(scaleBar);
+    </script>
+</body>
+
 </html>
